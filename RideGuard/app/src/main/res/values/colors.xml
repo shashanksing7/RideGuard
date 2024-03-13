@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Notificationcolor">#7097E4</color>
+    <color name="SplashScreenBg">#A2B3D5</color>
+    <color name="mainactivitytextviewbg">#E33030</color>
+    <color name="AlcoholLevel">#D1CBCB</color>
+    <color name="NotConnectd">#5EB362</color>
+    <color name="AccidentScreenBg">#E86565</color>
+    <color name="Progressbarcolor">#BB0000</color>
+    <color name="progreesbarcolorbg">#00FFFFFF</color>
+    <color name="crosscolor">#FFE60D</color>
+
+</resources>

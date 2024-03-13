@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/SplashScreenBg">
+
+    <!-- ImageView for the lower 70% -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome back,Sudhanshu !"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/lowerimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,5:7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/Connected"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/AccidentScreenBg"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="8dp"
+        android:text="Not Connected"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.091" />
+
+    <TextView
+        android:id="@+id/HelmetWorn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/AccidentScreenBg"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="8dp"
+        android:text="Helmet not Worn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Connected"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Connected"
+        app:layout_constraintTop_toBottomOf="@+id/Connected"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <TextView
+        android:id="@+id/AlcoholLevel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainactivitytextview"
+        android:backgroundTint="@color/AlcoholLevel"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="8dp"
+        android:text="Blood Alcohol Level = 0"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/HelmetWorn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/HelmetWorn"
+        app:layout_constraintTop_toBottomOf="@+id/HelmetWorn"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/maps"
+        android:layout_marginVertical="50dp"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AlcoholLevel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
